@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar fissa */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  text-align: center;
+  padding: 2rem;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-tile {
+  max-width: 320px;
+  margin: 1rem auto;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Query per mobile */
+@media (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+}
